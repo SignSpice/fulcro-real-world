@@ -2,21 +2,14 @@
   "expo": {
     "name": "Attendance",
     "slug": "ucv-attendance",
-    "privacy": "unlisted",
-    "entryPoint": "./app/index.js",
-    "sdkVersion": "35.0.0",
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "scheme": "ucvattendance",
     "version": "1.0.0",
+    "entryPoint": "app/index.js",
+    "scheme" : "ucvattendance",
     "orientation": "portrait",
-    "primaryColor": "#cccccc",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "cover",
+      "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -28,6 +21,14 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": ""
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
